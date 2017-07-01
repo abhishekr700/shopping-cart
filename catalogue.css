@@ -1,0 +1,29 @@
+.jumbotron{
+    background-color: #3eb4b1 !important;
+}
+
+#separator{
+    margin:10px;
+}
+.card{
+    margin-top:15px ;
+    margin-bottom: 15px;
+}
+body{
+    background-color: #a8e3e2;
+}
+#cart{
+    font-size: 120px;
+}
+
+#footer{
+    margin-top: 40px;
+}
+#cart-button{
+    /*margin-left: 40px;*/
+    margin-top: 40px;
+    background-color: white;
+}
+#cart-button:hover{
+    background-color: #5bc0de;
+}

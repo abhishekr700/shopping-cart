@@ -1,0 +1,49 @@
+#header{
+    /*color:white;*/
+    /*margin: 20px;*/
+    /*padding: 10px;*/
+}
+#cart{
+    font-size: 120px;
+}
+
+.jumbotron{
+    background-color: #3eb4b1 !important;
+}
+
+.footer{
+    position: absolute;
+    bottom: 200px;
+}
+table{
+    background-color: #7eccca;
+    margin-top: 20px;
+    color: #193d3c;
+    color: white;
+}
+thead{
+    background-color: #3eb4b1;
+}
+td{
+    font-weight: 700;
+}
+body{
+    background-color: #a8e3e2;
+}
+#catalogue-button{
+    margin-top: 40px;
+    background-color: white;
+}
+#catalogue-button:hover{
+    background-color: #5bc0de;
+}
+.plus-minus{
+    font-size: 20px;
+    /*background-color: #2aabd2;*/
+    padding: 1px;
+}
+.qty-container{
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 1px;
+}

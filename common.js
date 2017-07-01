@@ -35,6 +35,7 @@ function addToCart(event) {
         CartItems.push(obj);
     }
     setdata();
+    displayCatalogue();
     // updateCart();
     // alert("add to cart called")
     // console.log(event);

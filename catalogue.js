@@ -7,7 +7,7 @@ $(function () {
     // getCatalogue();
     displayCatalogue();
 
-    $("input[value='Add to Cart']").click(addToCart);
+    // $("input[value='Add to Cart']").click(addToCart);
 });
 
 function populateCatalog(name,price) {
@@ -74,4 +74,6 @@ function displayCatalogue() {
         }
     }
     $('#catalogue-container').append(row);
+    $("input[value='Add to Cart']").click(addToCart);
+
 }

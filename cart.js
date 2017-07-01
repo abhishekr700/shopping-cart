@@ -74,7 +74,7 @@ function updateCart() {
         var Item = catalogue[id];
         console.log(Item);
         // Amt += Item.price;
-        Amt += Item.price*CartItems[i].quantity
+        Amt += Item.price*CartItems[i].quantity;
         Qty += CartItems[i].quantity;
         var ItemRow = $(`<tr>
             <th scope="row" class="text-center">${parseInt(i)+1}</th>

@@ -7,6 +7,7 @@ $(function () {
     // fillCatalogue();
     // setCatalogue();
     getCatalogue();
+    getdata();
 });
 function getCatalogue() {
     console.log("getCatalogue called");
@@ -17,7 +18,8 @@ function getCatalogue() {
         catalogue = [];
 }
 function addToCart(event) {
-    var realId = event.target.parentNode.parentNode.id;
+    var realId = event.target.parentNode.parentNode.parentNode.parentNode.id;
+    console.log(event.target.parentNode.parentNode.id);
     var found = false;
     for(var i=0;i<CartItems.length;i++){
         if(CartItems[i].id == realId)

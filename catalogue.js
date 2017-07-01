@@ -39,13 +39,28 @@ function displayCatalogue() {
     var row = $("<div class='row'>");
     for(var i = 0; i<catalogue.length; i++)
     {
+        var NumInCart = 0;
+        for(var j=0;j<CartItems.length;j++)
+        {
+            if(CartItems[j].id == i)
+                NumInCart = CartItems[j].quantity;
+        }
         var element = $(`<div class="col-4">
                 <div class="card"  id="${i}">
                     <img src="p.png" class="card-img-top">
                     <div class="card-block">
                         <h4 class="card-title">${catalogue[i].name}</h4>
                         <p class="card-text">Price:${catalogue[i].price}</p>
-                        <input type="button" value="Add to Cart" class="btn btn-success" >
+                        <div class="row">
+                            <div class="col">
+                                <input type="button" value="Add to Cart" class="btn                                       btn-success">
+                             </div>
+                            <div class="col">
+                                 <span class="badge badge-danger badge-numincart" style="margin-top: 0px;margin-left: 30px; padding: 13px; padding-left: 20px; padding-right: 20px;">${NumInCart} In Cart</span>
+                            </div>
+
+                     </div>
+                        <!--<input type="button" value="Add to Cart" class="btn btn-success" >-->
                     </div>
                 </div>
             </div>`);
